@@ -18,6 +18,7 @@ The goal of this project is to have a clean Travis CI build, with specs:
  * Source: QDialog with Qt resource file
 
 More complex builds:
+ * [none]
 
 Less complex builds:
  * No SFML: [travis_qmake_gcc_cpp14_boost_qt5](https://www.github.com/richelbilderbeek/travis_qmake_gcc_cpp14_boost_qt5)

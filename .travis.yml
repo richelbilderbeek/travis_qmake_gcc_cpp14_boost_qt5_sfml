@@ -20,7 +20,6 @@ before_install:
 
 install: 
   # C++14
-  - g++ -v
   - sudo apt-get install -qq g++-5
   - sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-5 90
   # Qt5

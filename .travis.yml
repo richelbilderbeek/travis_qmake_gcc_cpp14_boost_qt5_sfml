@@ -12,18 +12,18 @@ before_install:
   # SFML
   #- sudo apt-add-repository ppa:sonkun/sfml-development -y
   #- sudo apt-get update -qq
-  # Qt5, from https://gist.github.com/jreese/6207161#gistcomment-1462109
-  - sudo add-apt-repository --yes ppa:ubuntu-sdk-team/ppa
   # C++14
   - sudo add-apt-repository --yes ppa:ubuntu-toolchain-r/test
+  # Qt5, from https://gist.github.com/jreese/6207161#gistcomment-1462109
+  - sudo add-apt-repository --yes ppa:ubuntu-sdk-team/ppa
 
 install: 
-  # Qt5
-  - sudo apt-get install -qq libqt5webkit5-dev qtdeclarative5-dev
-  - export QMAKE=/usr/lib/x86_64-linux-gnu/qt5/bin/qmake
   # C++14
   - sudo apt-get install -qq g++-6
   - sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-6 90
+  # Qt5
+  - sudo apt-get install -qq libqt5webkit5-dev qtdeclarative5-dev
+  - export QMAKE=/usr/lib/x86_64-linux-gnu/qt5/bin/qmake
   # SFML
   - sudo apt-get install libsfml-dev
 
